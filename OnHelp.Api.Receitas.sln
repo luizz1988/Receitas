@@ -5,6 +5,24 @@ VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnHelp.Api.Receitas", "OnHelp.Api.Receitas\OnHelp.Api.Receitas.csproj", "{D67EDA36-803F-468C-B651-D492CF4C6277}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "[5] - Services", "[5] - Services", "{DE5C37B8-1A6A-45EC-A2CF-E00323B03776}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "[4] - Ioc", "[4] - Ioc", "{97F29204-7F77-4E65-837D-E7F36CB23FC5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "[3] - Application", "[3] - Application", "{417FA22B-7C10-4ADE-A79B-C684BA8BAC76}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "[2] - Domain", "[2] - Domain", "{C5CFFBD3-0F25-4AFD-B9F8-A5E5BDAD86ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "[1] - Repository", "[1] - Repository", "{A7ECA330-FEA6-4BF8-A3C6-A25BD34C7EAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnHelp.Api.IoC", "OnHelp.Api.IoC\OnHelp.Api.IoC.csproj", "{039FA750-356C-4781-8A77-6E046154EFB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnHelp.Api.Application", "OnHelp.Api.Application\OnHelp.Api.Application.csproj", "{DA8DD20A-CE4C-48EE-A4B7-4E0F2B505E43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnHelp.Api.Domain", "OnHelp.Api.Domain\OnHelp.Api.Domain.csproj", "{1D5BC991-7844-4017-97D8-3D077659C28E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnHelp.Api.Repository", "OnHelp.Api.Repository\OnHelp.Api.Repository.csproj", "{EA108A9F-0E5E-422A-9547-4C98D86858B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +33,31 @@ Global
 		{D67EDA36-803F-468C-B651-D492CF4C6277}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D67EDA36-803F-468C-B651-D492CF4C6277}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D67EDA36-803F-468C-B651-D492CF4C6277}.Release|Any CPU.Build.0 = Release|Any CPU
+		{039FA750-356C-4781-8A77-6E046154EFB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{039FA750-356C-4781-8A77-6E046154EFB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{039FA750-356C-4781-8A77-6E046154EFB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{039FA750-356C-4781-8A77-6E046154EFB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA8DD20A-CE4C-48EE-A4B7-4E0F2B505E43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA8DD20A-CE4C-48EE-A4B7-4E0F2B505E43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA8DD20A-CE4C-48EE-A4B7-4E0F2B505E43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA8DD20A-CE4C-48EE-A4B7-4E0F2B505E43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D5BC991-7844-4017-97D8-3D077659C28E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D5BC991-7844-4017-97D8-3D077659C28E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D5BC991-7844-4017-97D8-3D077659C28E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D5BC991-7844-4017-97D8-3D077659C28E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA108A9F-0E5E-422A-9547-4C98D86858B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA108A9F-0E5E-422A-9547-4C98D86858B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA108A9F-0E5E-422A-9547-4C98D86858B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA108A9F-0E5E-422A-9547-4C98D86858B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D67EDA36-803F-468C-B651-D492CF4C6277} = {DE5C37B8-1A6A-45EC-A2CF-E00323B03776}
+		{039FA750-356C-4781-8A77-6E046154EFB0} = {97F29204-7F77-4E65-837D-E7F36CB23FC5}
+		{DA8DD20A-CE4C-48EE-A4B7-4E0F2B505E43} = {417FA22B-7C10-4ADE-A79B-C684BA8BAC76}
+		{1D5BC991-7844-4017-97D8-3D077659C28E} = {C5CFFBD3-0F25-4AFD-B9F8-A5E5BDAD86ED}
+		{EA108A9F-0E5E-422A-9547-4C98D86858B9} = {A7ECA330-FEA6-4BF8-A3C6-A25BD34C7EAE}
 	EndGlobalSection
 EndGlobal
