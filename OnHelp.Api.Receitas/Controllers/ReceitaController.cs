@@ -10,8 +10,8 @@ using System.Web.Http.Cors;
 
 namespace OnHelp.Api.Receitas.Controllers
 {
-    [EnableCors(origins: "http://localhost:8888", headers: "*", methods: "*")]
-    [RoutePrefix("API/ocorrencia")]
+ 
+    [RoutePrefix("API/receita")]
     public class ReceitaController : ApiController
     {
         private readonly IReceitaApplication _receitaApplication;

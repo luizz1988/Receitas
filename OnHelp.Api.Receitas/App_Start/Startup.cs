@@ -14,7 +14,7 @@ namespace OnHelp.Api.Receitas.App_Start
         {
             var config = new HttpConfiguration();
 
-         //   app.UseWebApi(config);
+            app.UseWebApi(config);
             app.RegisterWebApi(config);
             app.RegisterMediaTypeFormatter(config);
             app.ConfigureDependencyInjection(config);
