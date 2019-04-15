@@ -17,6 +17,7 @@ namespace OnHelp.Api.Domain.Contracts.Repositories.Base
         void Dispose();
         IEnumerable<T> GetByCriteria(Expression<Func<T, bool>> expression);
         T GetById(int id);
+        List<T> GetAll();
         void Save();
     }
 }

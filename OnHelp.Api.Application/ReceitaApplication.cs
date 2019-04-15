@@ -20,23 +20,42 @@ namespace OnHelp.Api.Application
         {
             this._receitaRepository = receitaRepository;
         }
-        #endregion
 
-        public Receita Get(string title)
+        public void Delete(Receita entity)
         {
             var service = new ReceitaService(_receitaRepository);
-            return service.GetTitle(title).FirstOrDefault();
+            service.Delete(entity);
+        }
+        #endregion
+
+        public List<Receita> Get(string title)
+        {
+            var service = new ReceitaService(_receitaRepository);
+            return service.GetTitle(title).ToList();
+        }
+
+        public List<Receita> GetAll()
+        {
+            var service = new ReceitaService(_receitaRepository);
+            return service.GetAll();
         }
 
         public Receita GetById(int id)
         {
-            throw new NotImplementedException();
+            var service = new ReceitaService(_receitaRepository);
+            return service.GetById(id);
         }
 
         public void Register(Receita user)
         {
             var service = new ReceitaService(_receitaRepository);
             service.Registre(user);
+        }
+
+        public void Update(Receita entity)
+        {
+            var service = new ReceitaService(_receitaRepository);
+            service.Update(entity);
         }
     }
 }

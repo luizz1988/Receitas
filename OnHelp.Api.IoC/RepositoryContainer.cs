@@ -15,7 +15,8 @@ namespace OnHelp.Api.IoC
         {
 
             container.Register<IReceitaRepository, ReceitaRepository>(Lifestyle.Scoped);
-           
+            container.Register<ICategoriaRepository, CategoriaRepository>(Lifestyle.Scoped);
+
 
         }
     }

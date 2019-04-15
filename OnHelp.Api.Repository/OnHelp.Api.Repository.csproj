@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EA108A9F-0E5E-422A-9547-4C98D86858B9}</ProjectGuid>
+    <ProjectGuid>{EDED0E6D-9250-4CA0-A9F8-A26C516FCC01}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>OnHelp.Api.Repository</RootNamespace>
@@ -56,18 +56,36 @@
     <Compile Include="Base\AuthDataContext.cs" />
     <Compile Include="Base\DataAccessBase.cs" />
     <Compile Include="Base\DataContextBase.cs" />
-    <Compile Include="ReceitaRepository.cs" />
+    <Compile Include="CategoriaRepository.cs" />
+    <Compile Include="Migrations\201904150228462_CreateTablesAndDataBase.cs" />
+    <Compile Include="Migrations\201904150228462_CreateTablesAndDataBase.Designer.cs">
+      <DependentUpon>201904150228462_CreateTablesAndDataBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904150330546_AlterTable.cs" />
+    <Compile Include="Migrations\201904150330546_AlterTable.Designer.cs">
+      <DependentUpon>201904150330546_AlterTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
+    <Compile Include="ReceitaRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\OnHelp.Api.Domain\OnHelp.Api.Domain.csproj">
       <Project>{1d5bc991-7844-4017-97d8-3d077659c28e}</Project>
       <Name>OnHelp.Api.Domain</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201904150228462_CreateTablesAndDataBase.resx">
+      <DependentUpon>201904150228462_CreateTablesAndDataBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904150330546_AlterTable.resx">
+      <DependentUpon>201904150330546_AlterTable.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

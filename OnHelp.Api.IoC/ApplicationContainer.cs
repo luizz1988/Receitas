@@ -14,7 +14,8 @@ namespace OnHelp.Api.IoC
         public static void RegisterApplication(this Container container)
         {
             container.Register<IReceitaApplication, ReceitaApplication>(Lifestyle.Scoped);
-            
+            container.Register<ICategoriaApplication, CategoriaApplication>(Lifestyle.Scoped);
+
 
         }
     }

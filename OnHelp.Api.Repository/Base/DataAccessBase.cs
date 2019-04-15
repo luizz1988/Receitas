@@ -42,6 +42,11 @@ namespace OnHelp.Api.Repository.Base
             return this.DbSet.FirstOrDefault(e => e.Id == id);
         }
 
+        public List<T> GetAll()
+        {
+            return this.DbSet.ToList();
+        }
+
         public IEnumerable<T> GetByCriteria(Expression<Func<T, bool>> expression)
         {
             if (expression == null)

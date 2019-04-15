@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace OnHelp.Api.Repository
 {
-    public class ReceitaRepository : DataAccessBase<Receita>, IReceitaRepository
+    public class CategoriaRepository : DataAccessBase<Categoria>, ICategoriaRepository
     {
 
     }

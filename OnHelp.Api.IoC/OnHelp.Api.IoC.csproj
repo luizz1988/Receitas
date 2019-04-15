@@ -61,7 +61,7 @@
       <Name>OnHelp.Api.Domain</Name>
     </ProjectReference>
     <ProjectReference Include="..\OnHelp.Api.Repository\OnHelp.Api.Repository.csproj">
-      <Project>{ea108a9f-0e5e-422a-9547-4c98d86858b9}</Project>
+      <Project>{eded0e6d-9250-4ca0-a9f8-a26c516fcc01}</Project>
       <Name>OnHelp.Api.Repository</Name>
     </ProjectReference>
   </ItemGroup>

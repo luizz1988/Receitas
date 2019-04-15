@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 
 namespace OnHelp.Api.Repository.Base
 {
-
     public class DataContextBase : DbContext
     {
 
@@ -25,7 +24,9 @@ namespace OnHelp.Api.Repository.Base
 
         #region DbSets
 
-        public DbSet<Receita> Usuario { get; set; }
+        public DbSet<Receita> Receitas { get; set; }
+
+        public DbSet<Categoria> Categoria { get; set; }
 
         #endregion
 

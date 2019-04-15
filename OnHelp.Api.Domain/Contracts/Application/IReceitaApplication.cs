@@ -11,6 +11,9 @@ namespace OnHelp.Api.Domain.Contracts.Application
     {
         Receita GetById(int id);
         void Register(Receita user);
-        Receita Get(string title);
+        List<Receita> Get(string title);
+        List<Receita> GetAll();
+        void Update(Receita entity);
+        void Delete(Receita entity);
     }
 }
