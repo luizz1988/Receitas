@@ -28,12 +28,6 @@ namespace OnHelp.Api.Domain.Services.Validator
               .NotEmpty()
               .WithMessage("Ingredientes da receita não pode ser nulo");
 
-            RuleFor(e => e.CategoryId)
-               .NotNull()
-              .NotEmpty()
-              .WithMessage("Categoria da receita não pode ser nulo");
-
-
         }
 
     }

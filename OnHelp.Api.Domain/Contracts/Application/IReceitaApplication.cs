@@ -14,6 +14,6 @@ namespace OnHelp.Api.Domain.Contracts.Application
         List<Receita> Get(string title);
         List<Receita> GetAll();
         void Update(Receita entity);
-        void Delete(Receita entity);
+        void Delete(int id);
     }
 }

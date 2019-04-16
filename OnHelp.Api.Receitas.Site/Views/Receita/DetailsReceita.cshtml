@@ -1,0 +1,69 @@
+﻿@model OnHelp.Api.Receitas.Site.Models.Receita
+
+@{
+    ViewBag.Title = "Detail";
+}
+
+<h2>Detail</h2>
+
+<div>
+    <h4>Receitas</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ingredients)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ingredients)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MethodOfPreparation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MethodOfPreparation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tags)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tags)
+        </dd>
+
+
+        <dt>
+          Categoria
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Categoria.Description)
+        </dd>
+
+
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "EditReceita", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "GetAllReceitas")
+</p>  

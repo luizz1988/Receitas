@@ -48,7 +48,7 @@ namespace OnHelp.Api.Receitas.Controllers
                 return Ok(result);
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
                 return InternalServerError(new Exception("Erro na consulta da categoria!"));
@@ -112,12 +112,12 @@ namespace OnHelp.Api.Receitas.Controllers
         }
 
         [HttpDelete]
-        public IHttpActionResult Delete([FromBody]Categoria entity)
+        public IHttpActionResult Delete([FromUri]int id)
         {
             try
             {
 
-                _categoriaApplication.Delete(entity);
+                _categoriaApplication.Delete(id);
 
                 return Ok();
             }

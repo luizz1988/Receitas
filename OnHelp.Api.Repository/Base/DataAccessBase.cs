@@ -47,6 +47,11 @@ namespace OnHelp.Api.Repository.Base
             return this.DbSet.ToList();
         }
 
+        public List<T> GetAllReceita()
+        {
+            return this.DbSet.Include("Categoria").ToList();
+        }
+
         public IEnumerable<T> GetByCriteria(Expression<Func<T, bool>> expression)
         {
             if (expression == null)

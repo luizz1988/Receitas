@@ -27,7 +27,6 @@ namespace OnHelp.Api.Domain.Model
         public string Tags { get; set; }
 
         [Required]
-        public int CategoryId { get; set; }
         public virtual Categoria Categoria { get; set; }
     }
 }

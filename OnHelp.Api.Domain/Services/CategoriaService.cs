@@ -68,15 +68,15 @@ namespace OnHelp.Api.Domain.Services
 
         }
 
-        public void Delete(Categoria entity)
+        public void Delete(int id)
         {
 
-            if (entity.Id == 0)
+            if (id == 0)
             {
                 throw new CustomException("Categoria Inexistente!");
             }
 
-            var delet = _categoriaRepository.GetById(entity.Id);
+            var delet = _categoriaRepository.GetById(id);
 
             _categoriaRepository.Delete(delet);
             _categoriaRepository.Save();

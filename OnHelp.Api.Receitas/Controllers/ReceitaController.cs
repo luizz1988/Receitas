@@ -117,12 +117,12 @@ namespace OnHelp.Api.Receitas.Controllers
         }
 
         [HttpDelete]
-        public IHttpActionResult Delete([FromBody]Receita entity)
+        public IHttpActionResult Delete([FromUri]int id)
         {
             try
             {
 
-                _receitaApplication.Delete(entity);
+                _receitaApplication.Delete(id);
 
                 return Ok();
             }

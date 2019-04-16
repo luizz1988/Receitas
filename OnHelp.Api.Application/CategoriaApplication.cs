@@ -21,10 +21,10 @@ namespace OnHelp.Api.Application
             this._categoriaRepository = categoriaRepository;
         }
 
-        public void Delete(Categoria entity)
+        public void Delete(int id)
         {
             var service = new CategoriaService(_categoriaRepository);
-            service.Delete(entity);
+            service.Delete(id);
         }
 
         public List<Categoria> Get(string title)

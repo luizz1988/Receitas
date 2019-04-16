@@ -18,6 +18,7 @@ namespace OnHelp.Api.Domain.Contracts.Repositories.Base
         IEnumerable<T> GetByCriteria(Expression<Func<T, bool>> expression);
         T GetById(int id);
         List<T> GetAll();
+        List<T> GetAllReceita();
         void Save();
     }
 }

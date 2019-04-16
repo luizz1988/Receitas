@@ -1,0 +1,69 @@
+﻿@model IEnumerable<OnHelp.Api.Receitas.Site.Models.Receita>
+
+@{
+    ViewBag.Title = "Get All Receitas";
+}
+
+<h2>Get All Receitas</h2>
+
+<p>
+    @Html.ActionLink("Create New", "CreateReceita")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ingredients)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MethodOfPreparation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tags)
+        </th>
+
+        <th>
+            Categoria
+        </th>
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Ingredients)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MethodOfPreparation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tags)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Categoria.Title)
+            </td>
+
+
+            <td>
+                @Html.ActionLink("Edit", "EditReceita", new { id = item.Id, title = item.Title, description = item.Description, prod = item }) |
+                @Html.ActionLink("Details", "DetailsReceita", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table> 

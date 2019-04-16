@@ -3,7 +3,7 @@ namespace OnHelp.Api.Repository.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class CreateTablesAndDataBase : DbMigration
+    public partial class CReate : DbMigration
     {
         public override void Up()
         {
@@ -28,11 +28,10 @@ namespace OnHelp.Api.Repository.Migrations
                         MethodOfPreparation = c.String(nullable: false, maxLength: 1000),
                         Image = c.Binary(),
                         Tags = c.String(),
-                        CategoryId = c.Int(nullable: false),
-                        Categoria_Id = c.Int(),
+                        Categoria_Id = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.Categoria", t => t.Categoria_Id)
+                .ForeignKey("dbo.Categoria", t => t.Categoria_Id, cascadeDelete: true)
                 .Index(t => t.Categoria_Id);
             
         }

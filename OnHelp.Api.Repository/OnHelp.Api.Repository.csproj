@@ -57,13 +57,9 @@
     <Compile Include="Base\DataAccessBase.cs" />
     <Compile Include="Base\DataContextBase.cs" />
     <Compile Include="CategoriaRepository.cs" />
-    <Compile Include="Migrations\201904150228462_CreateTablesAndDataBase.cs" />
-    <Compile Include="Migrations\201904150228462_CreateTablesAndDataBase.Designer.cs">
-      <DependentUpon>201904150228462_CreateTablesAndDataBase.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201904150330546_AlterTable.cs" />
-    <Compile Include="Migrations\201904150330546_AlterTable.Designer.cs">
-      <DependentUpon>201904150330546_AlterTable.cs</DependentUpon>
+    <Compile Include="Migrations\201904160402552_CReate.cs" />
+    <Compile Include="Migrations\201904160402552_CReate.Designer.cs">
+      <DependentUpon>201904160402552_CReate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -80,11 +76,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201904150228462_CreateTablesAndDataBase.resx">
-      <DependentUpon>201904150228462_CreateTablesAndDataBase.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904150330546_AlterTable.resx">
-      <DependentUpon>201904150330546_AlterTable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201904160402552_CReate.resx">
+      <DependentUpon>201904160402552_CReate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

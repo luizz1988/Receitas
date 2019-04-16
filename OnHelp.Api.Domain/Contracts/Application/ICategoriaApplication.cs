@@ -14,6 +14,6 @@ namespace OnHelp.Api.Domain.Contracts.Application
         List<Categoria> Get(string title);
         List<Categoria> GetAll();
         void Update(Categoria entity);
-        void Delete(Categoria entity);
+        void Delete(int id);
     }
 }

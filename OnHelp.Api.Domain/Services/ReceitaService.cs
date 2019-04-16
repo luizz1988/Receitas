@@ -15,9 +15,11 @@ namespace OnHelp.Api.Domain.Services
     {
 
         private readonly IReceitaRepository _receitaRepository;
-        public ReceitaService(IReceitaRepository receitaRepository)
+        private readonly ICategoriaRepository _categoriaRepository;
+        public ReceitaService(IReceitaRepository receitaRepository, ICategoriaRepository categoriaRepository)
         {
             _receitaRepository = receitaRepository;
+            _categoriaRepository = categoriaRepository;
         }
 
 
@@ -29,6 +31,7 @@ namespace OnHelp.Api.Domain.Services
             if (!result.IsValid)
                 throw new CustomException(result);
 
+            item.Categoria = _categoriaRepository.GetById(item.Categoria.Id);
 
             _receitaRepository.AddOrUpdate(item);
             _receitaRepository.Save();
@@ -43,7 +46,7 @@ namespace OnHelp.Api.Domain.Services
 
         public List<Receita> GetAll()
         {
-            var result = _receitaRepository.GetAll();
+            var result = _receitaRepository.GetAllReceita();
 
             return result;
 
@@ -70,15 +73,15 @@ namespace OnHelp.Api.Domain.Services
 
         }
 
-        public void Delete(Receita entity)
+        public void Delete(int id)
         {
 
-            if (entity.Id == 0)
+            if (id == 0)
             {
                 throw new CustomException("Receita Inexistente!");
             }
 
-            var delet = _receitaRepository.GetById(entity.Id);
+            var delet = _receitaRepository.GetById(id);
 
             _receitaRepository.Delete(delet);
             _receitaRepository.Save();

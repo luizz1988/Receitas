@@ -15,46 +15,48 @@ namespace OnHelp.Api.Application
         #region : Constructor
 
         private readonly IReceitaRepository _receitaRepository;
+        private readonly ICategoriaRepository _categoriaRepository;
 
-        public ReceitaApplication(IReceitaRepository receitaRepository)
+        public ReceitaApplication(IReceitaRepository receitaRepository, ICategoriaRepository categoriaRepository)
         {
             this._receitaRepository = receitaRepository;
+            _categoriaRepository = categoriaRepository;
         }
 
-        public void Delete(Receita entity)
+        public void Delete(int id)
         {
-            var service = new ReceitaService(_receitaRepository);
-            service.Delete(entity);
+            var service = new ReceitaService(_receitaRepository, _categoriaRepository);
+            service.Delete(id);
         }
         #endregion
 
         public List<Receita> Get(string title)
         {
-            var service = new ReceitaService(_receitaRepository);
+            var service = new ReceitaService(_receitaRepository, _categoriaRepository);
             return service.GetTitle(title).ToList();
         }
 
         public List<Receita> GetAll()
         {
-            var service = new ReceitaService(_receitaRepository);
+            var service = new ReceitaService(_receitaRepository, _categoriaRepository);
             return service.GetAll();
         }
 
         public Receita GetById(int id)
         {
-            var service = new ReceitaService(_receitaRepository);
+            var service = new ReceitaService(_receitaRepository, _categoriaRepository);
             return service.GetById(id);
         }
 
         public void Register(Receita user)
         {
-            var service = new ReceitaService(_receitaRepository);
+            var service = new ReceitaService(_receitaRepository, _categoriaRepository);
             service.Registre(user);
         }
 
         public void Update(Receita entity)
         {
-            var service = new ReceitaService(_receitaRepository);
+            var service = new ReceitaService(_receitaRepository, _categoriaRepository);
             service.Update(entity);
         }
     }

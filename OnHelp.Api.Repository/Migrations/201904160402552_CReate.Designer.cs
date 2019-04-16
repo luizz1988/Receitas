@@ -7,13 +7,13 @@ namespace OnHelp.Api.Repository.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class CreateTablesAndDataBase : IMigrationMetadata
+    public sealed partial class CReate : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(CreateTablesAndDataBase));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(CReate));
         
         string IMigrationMetadata.Id
         {
-            get { return "201904150228462_CreateTablesAndDataBase"; }
+            get { return "201904160402552_CReate"; }
         }
         
         string IMigrationMetadata.Source
