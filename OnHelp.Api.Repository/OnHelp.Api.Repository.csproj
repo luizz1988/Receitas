@@ -61,9 +61,28 @@
     <Compile Include="Migrations\201904160402552_CReate.Designer.cs">
       <DependentUpon>201904160402552_CReate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201907191728382_NewTable.cs" />
+    <Compile Include="Migrations\201907191728382_NewTable.Designer.cs">
+      <DependentUpon>201907191728382_NewTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907191814277_NewTabl.cs" />
+    <Compile Include="Migrations\201907191814277_NewTabl.Designer.cs">
+      <DependentUpon>201907191814277_NewTabl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907191815166_NewTablePessoa.cs" />
+    <Compile Include="Migrations\201907191815166_NewTablePessoa.Designer.cs">
+      <DependentUpon>201907191815166_NewTablePessoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907191841347_NewTableUsuario.cs" />
+    <Compile Include="Migrations\201907191841347_NewTableUsuario.Designer.cs">
+      <DependentUpon>201907191841347_NewTableUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="PessoaRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReceitaRepository.cs" />
+    <Compile Include="UnidadeRepository.cs" />
+    <Compile Include="UsuarioRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\OnHelp.Api.Domain\OnHelp.Api.Domain.csproj">
@@ -78,6 +97,18 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201904160402552_CReate.resx">
       <DependentUpon>201904160402552_CReate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907191728382_NewTable.resx">
+      <DependentUpon>201907191728382_NewTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907191814277_NewTabl.resx">
+      <DependentUpon>201907191814277_NewTabl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907191815166_NewTablePessoa.resx">
+      <DependentUpon>201907191815166_NewTablePessoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907191841347_NewTableUsuario.resx">
+      <DependentUpon>201907191841347_NewTableUsuario.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

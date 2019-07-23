@@ -28,6 +28,13 @@ namespace OnHelp.Api.Repository.Base
 
         public DbSet<Categoria> Categoria { get; set; }
 
+
+        public DbSet<Unidade> Unidade { get; set; }
+
+        public DbSet<Pessoa> Pessoa { get; set; }
+
+        public DbSet<Usuario> Usuario { get; set; }
+
         #endregion
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

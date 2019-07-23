@@ -15,6 +15,9 @@ namespace OnHelp.Api.IoC
         {
             container.Register<IReceitaApplication, ReceitaApplication>(Lifestyle.Scoped);
             container.Register<ICategoriaApplication, CategoriaApplication>(Lifestyle.Scoped);
+            container.Register<IUnidadeApplication, UnidadeApplication>(Lifestyle.Scoped);
+            container.Register<IPessoaApplication, PessoaApplication>(Lifestyle.Scoped);
+            container.Register<IUsuarioApplication, UsuarioApplication>(Lifestyle.Scoped);
 
 
         }
