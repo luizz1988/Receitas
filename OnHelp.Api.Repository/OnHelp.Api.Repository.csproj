@@ -77,6 +77,10 @@
     <Compile Include="Migrations\201907191841347_NewTableUsuario.Designer.cs">
       <DependentUpon>201907191841347_NewTableUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201907260205185_AlterTableUnidades.cs" />
+    <Compile Include="Migrations\201907260205185_AlterTableUnidades.Designer.cs">
+      <DependentUpon>201907260205185_AlterTableUnidades.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PessoaRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -109,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201907191841347_NewTableUsuario.resx">
       <DependentUpon>201907191841347_NewTableUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907260205185_AlterTableUnidades.resx">
+      <DependentUpon>201907260205185_AlterTableUnidades.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

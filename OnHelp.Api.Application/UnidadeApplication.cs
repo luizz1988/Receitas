@@ -23,7 +23,8 @@ namespace OnHelp.Api.Application
 
         public void Delete(int id)
         {
-            throw new NotImplementedException();
+            var service = new UnidadeService(_unidadeRepository);
+            service.Delete(id);
         }
 
         public List<Unidade> Get(string name)

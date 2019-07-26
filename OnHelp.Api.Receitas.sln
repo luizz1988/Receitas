@@ -23,10 +23,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnHelp.Api.Domain", "OnHelp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnHelp.Api.Repository", "OnHelp.Api.Repository\OnHelp.Api.Repository.csproj", "{EDED0E6D-9250-4CA0-A9F8-A26C516FCC01}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "[6] - Site", "[6] - Site", "{42F9F285-F857-47F2-AC06-6B72606FD3E2}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnHelp.Api.Receitas.Site", "OnHelp.Api.Receitas.Site\OnHelp.Api.Receitas.Site.csproj", "{0CCA6AF1-2053-4465-82F8-932B5E2F0BD8}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,10 +49,6 @@ Global
 		{EDED0E6D-9250-4CA0-A9F8-A26C516FCC01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDED0E6D-9250-4CA0-A9F8-A26C516FCC01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDED0E6D-9250-4CA0-A9F8-A26C516FCC01}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0CCA6AF1-2053-4465-82F8-932B5E2F0BD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0CCA6AF1-2053-4465-82F8-932B5E2F0BD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0CCA6AF1-2053-4465-82F8-932B5E2F0BD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0CCA6AF1-2053-4465-82F8-932B5E2F0BD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +59,8 @@ Global
 		{DA8DD20A-CE4C-48EE-A4B7-4E0F2B505E43} = {417FA22B-7C10-4ADE-A79B-C684BA8BAC76}
 		{1D5BC991-7844-4017-97D8-3D077659C28E} = {C5CFFBD3-0F25-4AFD-B9F8-A5E5BDAD86ED}
 		{EDED0E6D-9250-4CA0-A9F8-A26C516FCC01} = {A7ECA330-FEA6-4BF8-A3C6-A25BD34C7EAE}
-		{0CCA6AF1-2053-4465-82F8-932B5E2F0BD8} = {42F9F285-F857-47F2-AC06-6B72606FD3E2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {25A4D7AE-C7B4-4013-BE99-0BD214908E06}
 	EndGlobalSection
 EndGlobal

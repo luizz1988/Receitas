@@ -39,7 +39,7 @@ namespace OnHelp.Api.Receitas.Controllers
 
 
         }
-        
+
         [HttpPost]
         public IHttpActionResult Register([FromBody]Unidade entity)
         {
@@ -96,7 +96,7 @@ namespace OnHelp.Api.Receitas.Controllers
 
         }
 
-        [Authorize]
+        
         [HttpPut]
         public IHttpActionResult Update([FromBody]Unidade entity)
         {
@@ -112,7 +112,7 @@ namespace OnHelp.Api.Receitas.Controllers
                 return InternalServerError(ex);
             }
         }
-        [Authorize]
+        
         [HttpDelete]
         public IHttpActionResult Delete([FromUri]int id)
         {

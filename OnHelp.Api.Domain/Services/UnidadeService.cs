@@ -65,6 +65,23 @@ namespace OnHelp.Api.Domain.Services
 
         }
 
+        public void Delete(int id)
+        {
+            try
+            {
+                var result = _unidadeRepository.GetById(id);
+                _unidadeRepository.Delete(result);
+                _unidadeRepository.Save();
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
+
+        }
+
 
     }
 }

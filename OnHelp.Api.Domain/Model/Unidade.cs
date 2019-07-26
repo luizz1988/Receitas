@@ -15,9 +15,18 @@ namespace OnHelp.Api.Domain.Model
         public string Name { get; set; }
 
         [Required]
-        public string LotacaoTotal { get; set; }
+        public int LotacaoTotal { get; set; }
 
         [Required]
-        public string LotacaoAtual { get; set; }
+        public int LotacaoAtual { get; set; }
+
+        [Required]
+        public string Endereco { get; set; }
+        [Required]
+        public string Cep { get; set; }
+        [Required]
+        public string Estado { get; set; }
+        [Required]
+        public string Cidade { get; set; }
     }
 }

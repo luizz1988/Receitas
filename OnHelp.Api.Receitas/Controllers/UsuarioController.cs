@@ -28,10 +28,10 @@ namespace OnHelp.Api.Receitas.Controllers
                 return Ok(result);
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                return InternalServerError(new Exception("Erro na consulta da receita!"));
+                return InternalServerError(new Exception("Erro na consulta da receita!", ex.InnerException));
             }
 
 
